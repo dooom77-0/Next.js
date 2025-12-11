@@ -8,6 +8,7 @@ export default async function PostsPage() {
     console.log(posts)
     return (
         <div className="max-w-4xl mx-auto px-4 min-h-screen w-screen flex flex-col items-center justify-center">
+            <p>,,,</p>
             <h1 className="text-3xl font-bold mb-6 my-20">Posts</h1>
             <ul className="space-y-4">
                 {posts.map(post => (
