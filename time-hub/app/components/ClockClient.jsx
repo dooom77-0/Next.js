@@ -19,7 +19,7 @@ export default function ClockClient() {
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 0.7 }}
         >
-            <div className="flex min-h-screen items-center justify-center w-screen flex-col bg-linear-to-r from-blue-300 via-0%0 to-green-300">
+            <div className="text-2xl md:text-4xl lg:text-6xl flex min-h-screen items-center justify-center w-screen flex-col bg-linear-to-r from-blue-300 via-0%0 to-green-300">
             <h1 className="text-4xl font-bold mb-10">الساعة الحالية</h1>
 
             <h1 className="text-6xl font-bold text-shadow-lg">{time.toLocaleTimeString("en-US", { hour12: true })}</h1>

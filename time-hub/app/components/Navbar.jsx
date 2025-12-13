@@ -11,10 +11,10 @@ export default function Navbar() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-            <nav className="flex justify-center gap-4 fixed bottom-10 left-1/2 transform -translate-x-1/2 bg-white bg-opacity-70 backdrop-blur-md px-6 py-3 rounded-full shadow-lg items-center">
-            <Link href="/" className={pathname === "/" ? "bg-gray-300 p-5 rounded-full" : ""}  >الساعة الحالية ⏲️</Link>
+            <nav className="text-sm  md:text-lg lg:text-xl flex justify-center gap-4 fixed bottom-10 left-1/2 transform -translate-x-1/2 bg-white bg-opacity-70 backdrop-blur-md px-6 py-3 rounded-full shadow-lg items-center">
+            <Link href="/" className={pathname === "/" ? "bg-gray-300 p-5 rounded-full" : ""}  >الساعة  ⏲️</Link>
 
-            <Link href="/date" className={pathname === "/date" ? "bg-gray-300 p-5 rounded-full" : ""}>التاريخ الحالي 📅</Link>
+            <Link href="/date" className={pathname === "/date" ? "bg-gray-300 p-5 rounded-full" : ""}>التاريخ  📅</Link>
 
             <Link href="/stopwatch" className={pathname === "/stopwatch" ? "bg-gray-300 p-5 rounded-full" : ""}>ساعة ايقاف ⏱️</Link>
 
