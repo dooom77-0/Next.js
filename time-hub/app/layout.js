@@ -1,7 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Link from "next/link";
-
+import Navbar from "./components/Navbar";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -24,13 +23,7 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-linear-to-r from-blue-300 via-0%0 to-green-300`}
       >
         {children}
-        <nav className="fixed bottom-10 w-1/2 left-1/2 transform -translate-x-1/2  flex justify-between items-center py-2">
-          {/* Navigation items can be added here */}
-          <Link href="/">الساعة</Link>
-          <Link href="/date">التاريخ</Link>
-          <Link href="/time">الوقت العالمي</Link>
-          <Link href="/stopwatch">ساعة الايقاف</Link>
-        </nav>
+        <Navbar />
       </body>
     </html>
   );

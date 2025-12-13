@@ -1,4 +1,6 @@
 "use client";
+import Clock from "react-clock"
+import "react-clock/dist/Clock.css"
 import { useEffect, useState } from "react";
 export default function ClockClient() {
     const [time, setTime] = useState(new Date());
@@ -12,9 +14,13 @@ export default function ClockClient() {
     }, []);
     return (
         <div className="flex min-h-screen items-center justify-center w-screen flex-col bg-linear-to-r from-blue-300 via-0%0 to-green-300">
-            <h1 className="text-4xl font-bold mb-5">الساعة الحالية</h1>
+            <h1 className="text-4xl font-bold mb-10">الساعة الحالية</h1>
 
-            <h1 className="text-6xl font-bold">{time.toLocaleTimeString("en-US", { hour12: true })}</h1>
+            <h1 className="text-6xl font-bold text-shadow-lg">{time.toLocaleTimeString("en-US", { hour12: true })}</h1>
+
+            <h2>
+                <Clock value={time} size={200} className="mt-10" />
+            </h2>
         </div>
     );
 }

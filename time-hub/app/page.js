@@ -1,4 +1,4 @@
-import ClockClient from "./clock/ClockClient";
+import ClockClient from "./components/ClockClient";
 export const metadata = {
 title: "الساعة الحالية",
 description: "A simple app to display the current time.",
