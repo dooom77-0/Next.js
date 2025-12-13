@@ -1,5 +1,11 @@
+import StopWatchClient from "../components/StopWatchClient";
+
+export const metadata = {
+  title: "ساعة ايقاف",
+  description: "تطبيق ساعة ايقاف بسيط لبداية، إيقاف، وإعادة تعيين الوقت.",
+};
 export default function StopWatch() {
     return <div className="text-center min-h-screen w-screen flex flex-col justify-center items-center">
-        <h1>ساعة ايقاف</h1>
+        <StopWatchClient />
     </div>;
  }

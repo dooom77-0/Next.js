@@ -20,7 +20,7 @@ export default function Navbar() {
 
             <Link href="/pomodoro" className={pathname === "/pomodoro" ? "bg-gray-300 p-5 rounded-full" : ""}>بومودورو 🍅</Link>
 
-            <Link href="/glopalTime" className={pathname === "/glopalTime" ? "bg-gray-300 p-5 rounded-full" : ""}>الوقت العالمي 🌍</Link>
+            <Link href="/glopalTime" className={pathname === "/glopalTime" ? "bg-gray-300 p-5 rounded-full" : ""}>التوقيت العالمي 🌍</Link>
         </nav>
         </motion.div>
         
