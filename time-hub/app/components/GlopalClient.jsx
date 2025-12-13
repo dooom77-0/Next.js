@@ -31,7 +31,7 @@ export default function WorldClock() {
           >
             <div className="cities grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8">
         {cities.map((city, index) => (
-          <div key={index} className="city-time text-4xl flex flex-col items-center">
+          <div key={index} className="city-time text-3xl md:text-4xl lg:text-5xl flex flex-col items-center">
             <h3>{city.name}</h3>
             <p className="mt-2">
               {new Intl.DateTimeFormat("en-US", {
